@@ -21,7 +21,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Folio Agency</h3>
 
   <p align="center">
     An awesome README template to jumpstart your projects!
@@ -72,7 +72,7 @@
 
 <!--[![Product Name Screen Shot][product-screenshot]](https://example.com)-->
 
-Folio Agency - project being developed for the first challenge of the Front-End Development grant program (React).
+Project being developed for the first challenge of the Front-End Development grant program (React).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
