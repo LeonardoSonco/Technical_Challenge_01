@@ -60,7 +60,7 @@ Project being developed for the first challenge of the Front-End Development gra
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Technologies used for development.
 
 * [![Html][Html.com]][Html-url]
 * [![Css][Css.com]][Css-url]
@@ -72,7 +72,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To view the project, simply download the project and open it in your browser
+To view the project, simply download the project and open it in your browser.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
