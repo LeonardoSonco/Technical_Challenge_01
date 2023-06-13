@@ -19,10 +19,23 @@
     align-items: center;
 }
 
-
 .header-name{
     margin-left: 10px;
 }
+
+.header-image img{
+    max-width: 100%;
+    height: auto;
+    padding: 7px;
+    
+}
+
+.header-main-button button{
+    display: none;
+   
+}
+
+/*Formas*/
 
 .square-logo{
     position: absolute;
@@ -35,14 +48,6 @@
     border-radius: 8px;
 }
 
-.header-image img{
-    max-width: 100%;
-    height: auto;
-    padding: 7px;
-    
-}
-
-
 .square-point{
     position: absolute;
     top: 80%;
@@ -54,19 +59,34 @@
     
 }
 
-.header-main-button button{
-    display: none;
-   
+
+/*Links*/
+.nav-link{
+    text-decoration: none;
+    color: #8B8B8B;
 }
+
+.active{
+   color: #5468E7; 
+}
+
+.deactive{
+    color: #ADADAD;
+    pointer-events: none;
+    cursor: default;
+}
+
+
+/*Menu Hamburguer*/
 
 .barra{
     display: block;
-    width: 25px;
-    height: 3px;
+    width: 35px;
+    height: 2px;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: black
+    background-color: #232340;
 }
 
 .nav-menu{
@@ -76,7 +96,7 @@
     top: 109.5px;
     gap: 0;
     height: 100%;
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     text-align: center;
     transition: 0.8s;
