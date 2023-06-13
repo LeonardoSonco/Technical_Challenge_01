@@ -76,14 +76,12 @@ To view the project, simply download the project and open it in your browser.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Create the Header
-- [ ] Create date section
-- [ ] Create design section
-- [ ] Create information section
-- [ ] Create UI section
-- [ ] Create the footer
+- [ ] Create the Hero
+- [ ] Create Service
+- [ ] Create Work
+- [ ] Create job
+- [ ] Create Footer
 - [ ] Make responsive
-
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
