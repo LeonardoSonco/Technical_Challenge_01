@@ -104,7 +104,7 @@ Leonardo Sonco  - leonardokarling@hotmail.com
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: [https://linkedin.com/in/othneildrew](https://www.linkedin.com/in/leonardo-sonco-0366441b7/)
+[linkedin-url]: https://www.linkedin.com/in/leonardo-sonco-0366441b7/
 [product-screenshot]: images/screenshot.png
 [Html.com]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
 [Html-url]: https://html.com/
