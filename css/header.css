@@ -100,7 +100,8 @@
     width: 100%;
     text-align: center;
     transition: 0.8s;
-    opacity: 84%;
+    opacity: 95%;
+    z-index: 1;
     
 }
 

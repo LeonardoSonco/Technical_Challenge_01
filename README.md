@@ -76,10 +76,10 @@ To view the project, simply download the project and open it in your browser.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Create the Hero
-- [ ] Create Service
-- [ ] Create Work
-- [ ] Create job
+- [X] Create the Hero
+- [X] Create Service
+- [X] Create Work
+- [X] Create job
 - [ ] Create Footer
 - [ ] Make responsive
 

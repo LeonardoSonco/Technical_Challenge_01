@@ -1,0 +1,44 @@
+.job-container{
+    background: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%);
+}
+
+.job-info{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.job-info span{
+    color: #5468E7;
+}
+
+.job-cards li h6{
+    margin-bottom: 5px;
+}
+
+.job-cards{
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+.job-cards li{
+    background: #FFFFFF;
+    height: 175px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    margin: 15px 0;
+    padding-left: 40px;
+}
+
+.job-cards li span{
+    padding: 5px 0px;
+}
+
+
+.job-cards .cardActive{
+    color: #FFFFFF;
+    background-color: #232340;
+}
+
