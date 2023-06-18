@@ -10,9 +10,7 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
 
   <body>
@@ -38,18 +36,21 @@
           <li class="nav-item">
             <a href="#Services" class="nav-link deactive">Services</a>
           </li>
-          <li class="nav-item"><a href="#Jobs" class="nav-link">Jobs</a></li>
+          <li class="nav-item">
+            <a href="#Jobs" class="nav-link notification">Jobs</a>
+          </li>
         </ul>
-        <div class="hamburguer">
+        <div class="hamburguer" id="desktopDesactive">
           <span class="barra"></span>
           <span class="barra"></span>
         </div>
       </nav>
+      <button class="mobileDesactive header-button" class="">Contact Us</button>
     </header>
 
     <main>
       <section class="hero-container">
-        <div>
+        <div class="hero-divisionOne">
           <div class="hero-about">
             <h3>Stand Out From The Crowd.</h3>
             <p>
@@ -60,61 +61,93 @@
             <button>Recent Work</button>
           </div>
 
-          <div class="hero-firstImg"></div>
+          <div class="hero-firstImg">
+            <img class="hero-imgHeroOne" src="img/Hero/hero.png" alt="" />
+          </div>
         </div>
 
-        <div class="hero-second">
+        <div class="hero-divisionTwo" id="About">
           <div class="hero-dateInfo">
-            <span class="number">01.</span>
-            <span>Who We Are</span>
-            <h4>We Make Designs that Lead and Inpire.</h4>
-
-            <div class="hero-date">
-              <div class="arrows">
-                <span class="arrow-left"></span>
-                <span class="arrow-right arrowActive"></span>
+            <div class="hero-DivisionImg">
+              <div class="hero-logo mobileDesactive" >
+                <img src="img/logoSymbol.svg" alt="" />
               </div>
+              <div>
+                <span class="number">01.</span>
+                <span>Who We Are</span>
+              </div>
+            </div>
 
-              <select name="Date">
-                <option selected="2017">2017</option>
-                <option value="">2018</option>
-                <option value="">2019</option>
-                <option value="">2020</option>
-                <option value="">2021</option>
-              </select>
+            <div class="hero-DivisionTitle">
+              <h4>We Make Designs that Lead and Inpire.</h4>
+
+              <div class="hero-date">
+                <div class="arrows">
+                  <span class="arrow-left"></span>
+                  <span class="arrow-right arrowActive"></span>
+                </div>
+                <select name="Date">
+                  <option selected="2017">2017</option>
+                  <option value="">2018</option>
+                  <option value="">2019</option>
+                  <option value="">2020</option>
+                  <option value="">2021</option>
+                </select>
+              </div>
             </div>
           </div>
 
-          <img class="hero-image" src="img/Hero/hero-img2.png" alt="" />
+          <div class="hero-imgDesktop">
+            <ul class="hero-list">
+              <li>2017</li>
+              <li>2018</li>
+              <li>2019</li>
+              <li>2020</li>
+              <li>2021</li>
+            </ul>
+            <img class="hero-image" src="img/Hero/hero-Desktop2.png" alt="" />
 
-          <div class="hero-info">
-            <h6>
-              A design team building a curated marketplace for UI designers.
-            </h6>
-            <p>
-              4,404 curated design resources to energize your creative workflow.
-              We're a growing family of 334,531 designers and makers from around
-              the world
-            </p>
-            <button>Contact Us</button>
+            <div class="hero-info">
+              <div class="hero-infoGrid">
+                <div>
+                  <h6>
+                    A design team building a curated marketplace for UI
+                    designers.
+                  </h6>
+                  <p>
+                    4,404 curated design resources to energize your creative
+                    workflow. We're a growing family of 334,531 designers and
+                    makers from around the world
+                  </p>
+                  <button>Contact Us</button>
+                </div>
 
-            <div class="hero-branding">
-              <span class="brandingNumber">28</span>
-              <span class="menuItem">Bigest Branding</span>
+                <div class="hero-branding">
+                  <span class="brandingNumber">28</span>
+                  <span class="menuItem">Bigest Branding</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="service-container">
+      <section class="service-container" id="Services">
         <div class="service-info">
-          <span class="number">02.</span>
-          <span>What We Do</span>
-          <h4>We Make Designs that Lead and Inpire.</h4>
+          <div class="service-divisionImg">
+            <div class="service-logo mobileDesactive" >
+              <img src="img/logoSymbol.svg" alt="" />
+            </div>
+            <div><span class="number">02.</span> <span>What We Do</span></div>
+          </div>
 
-          <div class="arrows">
-            <span class="arrow-left"></span>
-            <span class="arrow-right arrowActive"></span>
+          <div class="service-divisionTitle">
+            <h4>We Make Designs that Lead and Inpire.</h4>
+
+            <div class="arrows">
+              <span class="arrow-left"></span>
+              <span class="arrow-right arrowActive"></span>
+            </div>
           </div>
         </div>
 
@@ -148,130 +181,299 @@
         </div>
       </section>
 
-      <section class="work-container">
+      <section class="work-container" id="Work">
         <div class="work-info">
-          <span class="number">03.</span>
-          <span>Famous Projects</span>
-          <h4>Our Partnerships.</h4>
+          <div class="work-divisionImg">
+            <div class="work-logo mobileDesactive" >
+              <img src="img/logoSymbol.svg" alt="" />
+            </div>
+            <div class="work-number">
+              <span class="number">03.</span>
+              <span>Famous Projects</span>
+            </div>
+          </div>
+
+          <div class="work-divisionTitle">
+            <h4>Our Partnerships.</h4>
+            <button class="mobileDesactive">Contact Us</button>
+          </div>
+
           <p>
-            Agency is a full-service agency, busy designing and building
+            Agency is a full-service agency, busy designing and building<br />
             beautiful digital products, brands, and experiences.
           </p>
         </div>
 
         <div class="work-images">
-          <div class="work-image">
-            <img src="img/Work/FemaleRunning.png" alt="" />
-            <button>Featured Product</button>
+          <div class="work-divisionOne">
+            <div class="work-imageRunnig">
+              <div class="work-square"></div>
+
+              <div class="work-viewButton">
+                <img
+                 
+                  class="viewButton mobileDesactive" 
+                  src="img/Work/viewButton.svg"
+                  alt=""
+                />
+              </div>
+              <img
+                class="femaleRunning"
+                src="img/Work/FemaleRunning.png"
+                alt=""
+              />
+              <div class="mobileDesactive arrows">
+                <span class="arrow-right arrowActive"></span>
+              </div>
+              <img
+             
+                class="femaleRunningDouble mobileDesactive"
+                src="img/Work/FemaleRunning.png"
+                alt=""
+              />
+            </div>
+
+            <div class="work-gridInfo">
+              <button>Featured Product</button>
+              <h6>
+                Sapiens: The Free <br />
+                Character Builder App
+              </h6>
+              <p>
+                Beautiful library of modular <br />
+                component-based<br />
+                character illustrations free<br />
+                to use for all your personal<br />
+                or client projects
+              </p>
+              <img id="desktopDesactive" src="img/Work/Stroke.svg" alt="" />
+            </div>
           </div>
 
-          <ul>
+          <ul class="work-cards">
             <li>
-              <h6>Bento 3D Illustration</h6>
-              <p>
-                Agency is a full-service agency, busy designing and building
-                beautiful digital products, brands
-              </p>
-              <img src="img/Work/Stroke.svg" alt="" />
+              <h6 class="mobileDesactive">Bento Vol. 2</h6>
               <div class="work-image">
+                <div class="work-background"></div>
                 <img src="img/Work/tabelaHorizontal.png" alt="" />
               </div>
-            </li>
-            <li>
-              <h6>Bento 3D Illustration</h6>
+              <h6 id="desktopDesactive">Bento Vol. 2</h6>
+
               <p>
                 Agency is a full-service agency, busy designing and building
                 beautiful digital products, brands
               </p>
-              <img src="img/Work/Stroke.svg" alt="" />
+              <img class="work-arrow" src="img/Work/Stroke.svg" alt="" />
+            </li>
+
+            <li>
+              <h6 class="mobileDesactive">Bento 3D Illustration</h6>
               <div class="work-image">
                 <img src="img/Work/tabelaVertical.png" alt="" />
               </div>
-            </li>
-            <li>
-              <h6>Bento 3D Illustration</h6>
+              <h6 id="desktopDesactive">Bento 3D Illustration</h6>
               <p>
                 Agency is a full-service agency, busy designing and building
                 beautiful digital products, brands
               </p>
-              <img src="img/Work/Stroke.svg" alt="" />
+              <img class="work-arrow" src="img/Work/Stroke.svg" alt="" />
+            </li>
+            <li>
+              <h6 class="mobileDesactive">Bento Vol. 3</h6>
               <div class="work-image">
                 <img src="img/Work/microfone.png" alt="" />
               </div>
-            </li>
-            <li>
-              <h6>Bento 3D Illustration</h6>
+              <h6 id="desktopDesactive">Bento Vol. 3</h6>
               <p>
                 Agency is a full-service agency, busy designing and building
                 beautiful digital products, brands
               </p>
-              <img src="img/Work/Stroke.svg" alt="" />
+              <img class="work-arrow" src="img/Work/Stroke.svg" alt="" />
+            </li>
+            <li>
+              <h6 class="mobileDesactive">Sapiens: Man</h6>
               <div class="work-image">
                 <img src="img/Work/maleRunning.png" alt="" />
               </div>
-            </li>
-
-            <li>
-              <h6>Bento 3D Illustration</h6>
+              <h6 id="desktopDesactive">Sapiens: Man</h6>
               <p>
                 Agency is a full-service agency, busy designing and building
                 beautiful digital products, brands
               </p>
-              <img src="img/Work/Stroke.svg" alt="" />
-            </li>
-          </ul>
-          <button>Contact Us</button>
-        </div>
-      </section>
-
-      <section class="job-container">
-        <div class="job-info">
-          <span class="number">04.</span>
-          <span>We are hiring</span>
-          <h4>Jobs</h4>
-          <p>
-            Agency is a full-service agency, busy designing and building
-            beautiful digital products, brands, and experiences.
-          </p>
-        </div>
-
-        <div class="job-cards">
-          <ul>
-            <li>
-              <h6 class="notification">Graphic Designer</h6>
-              <span>2 years experience</span>
-              <span class="material-symbols-outlined">
-                arrow_forward
-                </span>
-            </li>
-            <li class="cardActive">
-              <h6>Visual Designer</h6>
-              <span>2 years experience</span>
-              <span class="material-symbols-outlined">
-                arrow_forward
-                </span>
-            </li>
-            <li>
-              <h6>Art Director</h6>
-              <span>2 years experience</span>
-              <span class="material-symbols-outlined">
-                arrow_forward
-                </span>
-            </li>
-            <li>
-              <h6 class="notification">Web Designer</h6>
-              <span>2 years experience</span>
-              <span class="material-symbols-outlined">
-                arrow_forward
-                </span>
+              <img class="work-arrow" src="img/Work/Stroke.svg" alt="" />
+              <button class="work-buttonMobile">Contact Us</button>
             </li>
           </ul>
         </div>
-
       </section>
+
+      <section class="job-container" id="Jobs">
+        <div class="jog-grid">
+          <div class="job-info">
+            <div class="job-numberFlex">
+              <div  class="job-logo mobileDesactive">
+                <img src="img/logoSymbol.svg" alt="" />
+              </div>
+
+              <div class="job-number">
+                <span class="number">04.</span>
+                <span>We are hiring</span>
+              </div>
+            </div>
+
+            <h4>Jobs</h4>
+            <p>
+              Agency is a full-service agency, busy designing and building
+              beautiful digital products, brands, and experiences.
+            </p>
+            <div 
+           
+            class="job-available mobileDesactive">
+              <img src="img/Jobs/ArrowPurple.svg" alt="" />
+              <span
+                >Available <br />
+                jobs</span
+              >
+            </div>
+          </div>
+          <div class="job-cards">
+            <ul>
+              <li>
+                <h6 class="notification">Graphic Designer</h6>
+                <span>2 years experience</span>
+                <span class="material-symbols-outlined"> arrow_forward </span>
+              </li>
+              <li class="cardActive">
+                <h6>Visual Designer</h6>
+                <span>2 years experience</span>
+                <span class="material-symbols-outlined"> arrow_forward </span>
+              </li>
+              <li>
+                <h6>Art Director</h6>
+                <span>2 years experience</span>
+                <span class="material-symbols-outlined"> arrow_forward </span>
+              </li>
+              <li>
+                <h6 class="notification">Web Designer</h6>
+                <span>2 years experience</span>
+                <span class="material-symbols-outlined"> arrow_forward </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer-container">
+        <div class="footer-mobile" id="desktopDesactive">
+          <div class="footer-info">
+            <img src="img/Footer/SpeachBubble.png" alt="" />
+            <span>Say hello</span>
+
+            <p class="menuItem">
+              A design team building a curated marketplace for UI designers.
+            </p>
+            <div class="line"></div>
+            <h5>Let’s talk about your next project</h5>
+            <button>Contact Us</button>
+          </div>
+
+          <div class="footer-network">
+            <img class="footer-logo" src="img/light-mode.svg" alt="" />
+            <p>Agency is a full-service agency, busy designing and building.</p>
+            <div class="footer-select">
+              <select name="navigation">
+                <option value="">Home</option>
+              </select>
+            </div>
+
+            <div class="footer-icons">
+              <div class="network-circle">
+                <img src="img/Footer/logo-facebook.svg" alt="" />
+              </div>
+              <div class="network-circle">
+                <img src="img/Footer/logo-youtube.svg" alt="" />
+              </div>
+              <div class="network-circle">
+                <img src="img/Footer/logo-instagram.svg" alt="" />
+              </div>
+            </div>
+            <span>© 2020, UI8 LLC.</span>
+          </div>
+        </div>
+
+        <div class="footer-desktop mobileDesactive">
+          <div class="footer-info">
+            <div class="footer-flex">
+              <img src="img/Footer/logo_symbol.png" alt="" />
+
+              <span>Say hello</span>
+
+              <p class="menuItem">
+                A design team building a curated <br />
+                marketplace for UI designers.
+              </p>
+            </div>
+            <div class="footer-grid">
+              <h5>Let’s talk about your next project</h5>
+
+              <div class="job-lineBorder">
+                <div class="footer-gridFLex">
+                  <img
+                    class="footer-imgBubble"
+                    src="img/Footer/SpeachBubble.png"
+                    alt=""
+                  />
+                  <div class="footer-gridFlexText">
+                    <p class="menuItem">Invest in your designs today!</p>
+                    <img src="img/Footer/StrokeWhite.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-network">
+            <img class="footer-logo" src="img/light-mode.svg" alt="" />
+            <p>
+              Agency is a full-service agency, busy designing and building
+              beautiful digital products, brands, and experiences.
+            </p>
+            <nav class="header-menu">
+              <ul class="nav-menu">
+                <li class="nav-item">
+                  <a href="#About" class="nav-link active">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#Work" class="nav-link">Work</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#Services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#Jobs" class="nav-link">Jobs</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="footer-last">
+              <span>© 2020, UI8 LLC.</span>
+              <div class="footer-icon">
+                <span>Follow us</span>
+                <div class="network-circle">
+                  <img src="img/Footer/logo-facebookBlack.svg" alt="" />
+                </div>
+                <div class="network-circle">
+                  <img src="img/Footer/logo-youtube.svg" alt="" />
+                </div>
+                <div class="network-circle">
+                  <img src="img/Footer/logo-instagram.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
-
-    <footer></footer>
   </body>
   <script src="js/menuHamburguer.js"></script>
 </html>

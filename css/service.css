@@ -1,87 +1,159 @@
-.service-container{
-    
-    margin: 0 auto;
-    background: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%);
+.service-container {
+  margin: 0 auto;
+  background: linear-gradient(
+    360deg,
+    rgba(255, 255, 255, 0.0001) 0%,
+    rgba(237, 229, 240, 0.504289) 100%
+  );
 }
 
-
-
-.service-info{
-    margin: 0 auto;
-    padding-top: 60px;
-    width: 80%;
-    
+.service-info {
+  margin: 0 auto;
+  padding-top: 60px;
+  width: 80%;
 }
 
-.service-info span{
-    
-    color: #5468E7;
-    margin-left: 15px;
+.service-info span {
+  color: #5468e7;
+  margin-left: 15px;
 }
 
-.service-info h4{
-    color: #232340;
+.service-info h4 {
+  color: #232340;
+  margin-top: 20px;
+}
+
+.service-info .arrows {
+  padding-top: 30px;
+}
+
+.service-cards {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.service-cards li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 190px;
+  background: #ffffff;
+  color: #5468e7;
+  border-radius: 32px;
+  margin: 20px 0;
+  box-shadow: 0px 10px #f5f5f5;
+}
+
+.service-cards .circle {
+  justify-self: end;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #d1ecfd;
+  align-items: center;
+  justify-content: center;
+  justify-items: end;
+}
+
+#cardActive {
+  background: #5468e7;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.service-cards li:nth-child(2) .circle {
+  background: #908cff;
+}
+
+.service-cards li:nth-child(3) .circle {
+  background: #ffc0a5;
+}
+
+.service-cards li:nth-child(4) .circle {
+  background: #ffadd0;
+}
+
+@media screen and (min-width: 1280px) {
+  .service-info {
+    padding: 10% 0 3% 0;
+  }
+
+  .service-divisionImg {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .service-divisionImg span {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+  }
+  .service-divisionTitle {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     margin-top: 20px;
-}
+  }
 
+  .service-info .service-divisionTitle h4 {
+    grid-column: 6/2;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 72px;
+    margin: 0;
+  }
 
-.service-info .arrows{
-    padding-top: 30px;
-}
+  .service-info .arrows {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    padding-top: 0;
+  }
+  .service-info .arrowActive {
+    padding: 35px;
+  }
 
-
-.service-cards{
+  .service-cards {
     width: 80%;
     margin: 30px auto;
-}
+  }
 
-
-
-.service-cards li{
+  .service-cards ul {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-    height: 190px;
-    background: #FFFFFF;
-    color: #5468E7;
-    border-radius: 32px;
-    margin: 20px 0;
-    box-shadow: 0px 10px #f5f5f5 ;
-   
-}
+    grid-template-columns: repeat(4, 1fr);
+    height: 600px;
+    align-content: center;
+  }
 
-.service-cards .circle{
-    justify-self: end;
+  .service-cards {
+    width: 80%;
+    margin: 30px auto;
+    height: 560px;
+  }
+
+  .service-cards li {
     display: flex;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: #D1ECFD;
-    align-items: center;
     justify-content: center;
-    justify-items: end;
-    
+    flex-direction: column;
+    height: 480px;
+    border-radius: 0px;
+  }
+
+  .service-cards li:nth-child(4) {
+    border-bottom-right-radius: 48px;
+    border-top-right-radius: 48px;
+  }
+
+  .service-cards li:nth-child(1) {
+    border-bottom-left-radius: 48px;
+    border-top-left-radius: 48px;
+  }
+
+  #cardActive {
+    border-radius: 48px;
+    transform: scale(1.05, 1.15);
+  }
 }
-
-#cardActive{
-    background:#5468E7 ;
-    color: #FFFFFF;
-    box-shadow: none ;
-    
-}
-
-.service-cards li:nth-child(2) .circle{
-    background: #908CFF;
-}
-
-.service-cards li:nth-child(3) .circle{
-    background: #FFC0A5;
-}
-
-.service-cards li:nth-child(4) .circle{
-    background: #FFADD0;
-}
-
-

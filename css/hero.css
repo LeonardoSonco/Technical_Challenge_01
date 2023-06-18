@@ -1,19 +1,11 @@
-.hero-about {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.hero-container h3 {
-  color: #232340;
-}
-
+/*Container Geral*/
 .hero-container p {
   margin-top: 25px;
 }
 
 .hero-container button {
+  position: absolute;
   border-radius: 8px;
-  float: left;
   width: 160px;
   height: 56px;
   background: #5468e7;
@@ -24,33 +16,25 @@
   margin-top: 25px;
 }
 
-.hero-firstImg {
+/*Division One*/
+.hero-container .hero-divisionOne .hero-about {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero-container .hero-divisionOne .hero-about h3 {
+  color: #232340;
+}
+
+.hero-container .hero-divisionOne .hero-imgHeroOne {
   position: relative;
-  margin-top: 50px;
+  margin: 50px 0 15% 0;
   width: 100%;
-  height: 0;
-  background-image: url("../img/Hero/hero.png");
-  background-position: left center;
-  background-size: 120%;
-  background-repeat: no-repeat;
-  margin-bottom: 50px;
-  padding-bottom: 100%; /* Proporção de aspecto da imagem (altura / largura) */
+  left: 17%;
 }
 
-.hero-firstImg::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 43%;
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/Hero/trapezio.png");
-  background-size: 70% 100%;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
-.hero-second {
+/*Divison Two*/
+.hero-divisionTwo {
   background-color: #232340;
   padding-bottom: 30px;
 }
@@ -92,12 +76,8 @@
   font-weight: 600;
 }
 
-.hero-date select option {
-  font-size: 10px !important;
-}
-
 .hero-date option {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .hero-date span {
@@ -105,7 +85,9 @@
 }
 
 .hero-image {
-  width: 100%;
+  width: 150%;
+  position: relative;
+  right: 25%;
 }
 
 .hero-info {
@@ -118,14 +100,13 @@
   color: #ffffff;
 }
 
-.hero-info button {
-  float: none;
-}
-
 .hero-info p {
   color: #8b8b8b;
 }
 
+.hero-info button {
+  float: none;
+}
 .hero-branding {
   display: flex;
   margin: 50px auto;
@@ -137,10 +118,183 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 40%;
 }
 
-.brandingNumber {
+.hero-branding .brandingNumber {
   font-weight: 600;
   font-size: 140px;
   line-height: 140px;
+}
+
+.hero-list {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  
+  .hero-divisionOne {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    width: 85%;
+    margin: 3% auto;
+  }
+
+  .hero-divisionOne .hero-about {
+    margin-top: 15%;
+    width: 100%;
+  }
+
+  .hero-divisionOne h3 {
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 100px;
+    letter-spacing: -1px;
+  }
+
+  .hero-divisionOne p {
+    font-size: 18px;
+    padding: 30px 0;
+  }
+
+  .hero-divisionOne .hero-imgHeroOne {
+    position: relative;
+
+    left: -1%;
+    width: 105%;
+    margin-top: 5%;
+  }
+
+  .hero-divisionOne button {
+    width: 180px;
+    height: 64px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  /*#########################*/
+  
+  .hero-divisionTwo {
+    background-color: #232340;
+    padding-bottom: 30px;
+  }
+
+  .hero-dateInfo {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 8%;
+  }
+
+  .hero-DivisionImg {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .hero-logo {
+    margin-left: 20%;
+  }
+
+  .hero-DivisionTitle {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 20px;
+  }
+
+  .hero-dateInfo .hero-DivisionTitle h4 {
+    grid-column: 6/2;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 72px;
+    margin: 0;
+  }
+
+  .hero-date {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+  }
+  .hero-date .arrowActive {
+    padding: 35px;
+  }
+
+  .hero-date select {
+    display: none;
+  }
+
+  .hero-date span {
+    color: #ffffff;
+  }
+
+  .hero-imgDesktop {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .hero-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #8b8b8b;
+    height: 100%;
+  }
+
+  .hero-list li {
+    font-size: 18px;
+  }
+
+  .hero-image {
+    width: 90%;
+    position: static;
+    margin: 0 auto;
+  }
+
+  .hero-info {
+    grid-column: 2;
+  }
+
+  .hero-infoGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10% 0;
+  }
+
+  .hero-infoGrid h6 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+  }
+  .hero-infoGrid p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .hero-infoGrid button {
+    width: 180px;
+    height: 64px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .hero-branding {
+    background: #232340;
+  }
+
+  .hero-branding .brandingNumber {
+    font-weight: 600;
+    font-size: 200px;
+    line-height: 239px;
+  }
+  .hero-branding .menuItem {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+  }
 }

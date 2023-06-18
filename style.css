@@ -3,11 +3,13 @@
 @import url(css/service.css);
 @import url(css/work.css);
 @import url(css/job.css);
+@import url(css/footer.css);
 
 @import url("https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700;800&display=swap");
 body {
   margin: 0 auto;
   font-family: "Geologica", sans-serif;
+  width: 100%;
 }
 
 main {
@@ -35,6 +37,13 @@ h4 {
   letter-spacing: -0.4px;
 }
 
+h5 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.5px;
+}
+
 h6 {
   font-weight: 700;
   font-size: 24px;
@@ -44,7 +53,6 @@ h6 {
 .number {
   color: #adadad;
   padding-right: 20px;
-
 }
 
 span {
@@ -85,13 +93,12 @@ span {
   padding: 30px;
 }
 
-.notification{
+.notification {
   display: flex;
   align-items: center;
-
 }
 
-.notification::after{
+.notification::after {
   content: "2";
   font-size: 14px;
   color: white;
@@ -101,12 +108,43 @@ span {
   align-items: center;
   width: 24px;
   height: 24px;
-  background: linear-gradient(180deg, #3A8FFF 0%, #0837AE 100%);
+  background: linear-gradient(180deg, #3a8fff 0%, #0837ae 100%);
   border-radius: 50%;
   margin-left: 10px;
 }
 
-
-.job-cards li:nth-child(4) .notification::after{
+.job-cards li:nth-child(4) .notification::after {
   content: "6";
+}
+
+.mobileDesactive{
+  display: none;
+}
+
+br{
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  br{
+    display: inline;
+  }
+
+
+  #desktopDesactive {
+    display: none;
+  }
+
+  .mobileDesactive{
+    display: block;
+  }
+  
+  
+  .notification::after {
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+
+  }
+
 }
