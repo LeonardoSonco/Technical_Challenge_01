@@ -73,14 +73,14 @@ span {
 }
 
 .arrow-right {
-  background: url("../img/arrow_right.svg");
+  background: url("img/arrow_right.svg");
   background-position: center;
   padding: 20px;
   background-repeat: no-repeat;
 }
 
 .arrow-left {
-  background: url("../img/arrow_left.svg");
+  background: url("img/arrow_left.svg");
   background-position: center;
   background-repeat: no-repeat;
   padding: 20px;

@@ -130,8 +130,13 @@
     padding: 10px 0;
     color: #8b8b8b;
   }
-  .job-cards li .material-symbols-outlined {
+
+  .job-cards .cardActive .material-symbols-outlined {
     font-size: 36px;
     color: #ffffff;
+  }
+  .job-cards li .material-symbols-outlined {
+    font-size: 36px;
+    color: #000000;
   }
 }
