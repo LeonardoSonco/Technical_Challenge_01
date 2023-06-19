@@ -77,6 +77,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .service-container{
+    margin-bottom: 10%;
+  }
+  
   .service-info {
     padding: 10% 0 3% 0;
   }

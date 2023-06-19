@@ -80,8 +80,8 @@ To view the project, simply download the project and open it in your browser.
 - [X] Create Service
 - [X] Create Work
 - [X] Create job
-- [ ] Create Footer
-- [ ] Make responsive
+- [X] Create Footer
+- [X] Make responsive(1920x1080 & 375x667)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
